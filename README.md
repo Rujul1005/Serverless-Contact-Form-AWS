@@ -8,16 +8,22 @@ AWS S3 (Static Website Hosting), AWS API Gateway (REST API), AWS Lambda (Serverl
 ## 🧠 Architecture
 Frontend → API Gateway → Lambda → DynamoDB
 
-## 📁 Project Structure
-frontend/ (index.html)  
-lambda/ (index.js)
-
 ## 🚀 Features
 - Fully serverless architecture  
 - Static website hosted on AWS S3  
 - Stores form submissions in DynamoDB  
 - Scalable and cost-efficient backend  
-- Simple HTML/CSS/JS frontend  
+- Simple HTML/CSS/JS frontend
+
+## 📸 Screenshots
+<img width="1403" height="795" alt="Bucket" src="https://github.com/user-attachments/assets/f4322045-1c82-4470-b731-c5a1be34d0f3" />
+<img width="1920" height="1080" alt="DynamoDB" src="https://github.com/user-attachments/assets/896cfd58-652f-4735-a443-42fe27a9d1be" />
+<img width="1920" height="1080" alt="Contact Form" src="https://github.com/user-attachments/assets/8948b669-3144-4306-ab4f-3e272eefdfd0" />
+<img width="1920" height="1080" alt="Lambda Function" src="https://github.com/user-attachments/assets/7b10a554-c574-4683-b062-2957c93895d3" />
+
+
+
+---
 
 ## 🔧 How It Works
 1. User submits form on website  
@@ -65,7 +71,13 @@ POST https://your-api-id.execute-api.region.amazonaws.com/contact
 - API Gateway + Lambda integration  
 - Working with DynamoDB NoSQL database  
 - Hosting static websites using S3  
- 
 
-## 👨‍💻 Author
-Built as part of Cloud Computing learning journey 🚀
+## ⚠️ Note
+AWS resources were removed to avoid billing charges.  
+Screenshots are provided as proof of deployment.
+
+---
+
+
+## 💼 Resume Highlight
+Built a serverless contact form using AWS S3, API Gateway, Lambda, and DynamoDB to process and store user data without a backend server.
