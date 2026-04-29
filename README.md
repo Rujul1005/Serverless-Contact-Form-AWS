@@ -1,30 +1,33 @@
 # 🌐 AWS Serverless Contact Form
 
-🚀 Project Overview
-
+## 🚀 Project Overview
 This project demonstrates a fully serverless contact form application using AWS cloud services.
+
 The frontend is a static HTML website hosted on Amazon S3. When a user submits the form, data is sent through API Gateway, processed by AWS Lambda, and stored in DynamoDB.
+
 ---
 
-## ⚙️ Tech Stack
-Amazon S3
-Amazon API Gateway
-AWS Lambda
-Amazon DynamoDB
-HTML, CSS, JavaScript
+## 🧰 Tech Stack
+- Amazon S3  
+- Amazon API Gateway  
+- AWS Lambda  
+- Amazon DynamoDB  
+- HTML, CSS, JavaScript 
 ---
 
-## 🧠 Architecture
-User → S3 (HTML Form) → API Gateway → Lambda → DynamoDB
+## 🏗️ Architecture
+User → S3 (HTML Form) → API Gateway → Lambda → DynamoDB  
+
 S3 hosts the static website, API Gateway handles HTTP requests, Lambda processes the data, and DynamoDB stores the form submissions.
+
 ---
 
-## 🚀 Features
-Serverless backend architecture
-Static website hosting on AWS S3
-Real-time form submission handling
-Data storage in DynamoDB
-Scalable and cost-efficient design
+## ✨ Features
+- Serverless backend architecture  
+- Static website hosting on AWS S3  
+- Real-time form submission handling  
+- Data storage in DynamoDB  
+- Scalable and cost-efficient design  
 ---
 
 ## 📸 Screenshots
@@ -36,25 +39,27 @@ Scalable and cost-efficient design
 ---
 
 
-##🧠 What I Learned
-Hosting static websites using S3
-Building serverless APIs using API Gateway
-Writing AWS Lambda functions for backend logic
-Storing and retrieving data using DynamoDB
-Integrating frontend with cloud backend services
+## 🧠 What I Learned
+- Hosting static websites using S3  
+- Building serverless APIs using API Gateway  
+- Writing AWS Lambda functions for backend logic  
+- Working with DynamoDB NoSQL database  
+- Integrating frontend with cloud backend services  
+
 ---
 
 ## ⚙️ Deployment Steps
-Create a DynamoDB table for storing form data
-Create AWS Lambda function to process requests
-Configure API Gateway and connect it to Lambda
-Enable CORS for frontend integration
-Host frontend HTML file on Amazon S3
-Test form submission and verify data in DynamoDB
+- Create a DynamoDB table for storing form data  
+- Create AWS Lambda function to process requests  
+- Configure API Gateway and connect it to Lambda  
+- Enable CORS for frontend integration  
+- Host frontend HTML file on Amazon S3  
+- Test form submission and verify data in DynamoDB 
 ---
 
 ## 🌐 API Endpoint Example
-POST https://your-api-id.execute-api.region.amazonaws.com/contact  
+Base URL: https://5t0wyd87ch.execute-api.us-east-1.amazonaws.com
+Route: /contact
 ---
 
 ## 📌 Lambda Function Code
@@ -83,7 +88,7 @@ POST https://your-api-id.execute-api.region.amazonaws.com/contact
     };  
 
 ## ⚠️ Note
-AWS resources should be monitored to avoid unnecessary billing.
+AWS resources should be monitored to avoid unnecessary billing.  
 Ensure proper IAM permissions are configured for Lambda access to DynamoDB.
 
 ---
