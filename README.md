@@ -65,12 +65,7 @@ POST https://your-api-id.execute-api.region.amazonaws.com/contact
 - API Gateway + Lambda integration  
 - Working with DynamoDB NoSQL database  
 - Hosting static websites using S3  
-
-## 🔥 Future Improvements
-- Add email notifications using AWS SNS  
-- Improve UI with frameworks like React  
-- Add authentication system  
-- Add form validation and security layers  
+ 
 
 ## 👨‍💻 Author
 Built as part of Cloud Computing learning journey 🚀
