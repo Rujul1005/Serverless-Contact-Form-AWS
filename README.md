@@ -1,9 +1,9 @@
 # 🚀 Serverless Contact Form using AWS
 
-A fully serverless contact form web application built using AWS. Users submit data from a static website and it is processed and stored in the cloud without any backend server.
+A fully serverless contact form web application built using AWS. Users submit data from a static website hosted on S3, and the data is processed and stored in the cloud without any backend server.
 
 ## ⚙️ Tech Stack
-AWS S3 (Static Website Hosting), AWS CloudFront (CDN), AWS API Gateway (REST API), AWS Lambda (Serverless Backend), AWS DynamoDB (NoSQL Database)
+AWS S3 (Static Website Hosting), AWS API Gateway (REST API), AWS Lambda (Serverless Backend), AWS DynamoDB (NoSQL Database)
 
 ## 🧠 Architecture
 Frontend → API Gateway → Lambda → DynamoDB
@@ -14,20 +14,20 @@ lambda/ (index.js)
 
 ## 🚀 Features
 - Fully serverless architecture  
-- Fast global website delivery using CloudFront CDN  
+- Static website hosted on AWS S3  
 - Stores form submissions in DynamoDB  
-- Scalable and cost-efficient  
+- Scalable and cost-efficient backend  
 - Simple HTML/CSS/JS frontend  
 
 ## 🔧 How It Works
 1. User submits form on website  
-2. Request goes to API Gateway  
-3. API Gateway triggers Lambda function  
-4. Lambda processes and stores data in DynamoDB  
+2. Request is sent to API Gateway  
+3. API Gateway triggers AWS Lambda function  
+4. Lambda processes data and stores it in DynamoDB  
 5. Data is saved and visible in AWS console  
 
 ## 🌐 API Endpoint Example
-POST https://your-api-id.execute-api.region.amazonaws.com/contact
+POST https://your-api-id.execute-api.region.amazonaws.com/contact  
 
 ## 📌 Lambda Function Code
 const AWS = require("aws-sdk");  
@@ -55,17 +55,16 @@ exports.handler = async (event) => {
 };  
 
 ## 🧪 AWS Services Used
-- Amazon S3 → Hosting frontend  
-- Amazon CloudFront → CDN  
+- Amazon S3 → Hosting static website  
 - Amazon API Gateway → API layer  
 - AWS Lambda → Backend logic  
 - Amazon DynamoDB → Database  
 
 ## 💡 What I Learned
-- Serverless architecture on AWS  
+- Serverless architecture using AWS  
 - API Gateway + Lambda integration  
 - Working with DynamoDB NoSQL database  
-- Hosting static websites using S3 + CloudFront  
+- Hosting static websites using S3  
 
 ## 🔥 Future Improvements
 - Add email notifications using AWS SNS  
