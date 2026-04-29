@@ -9,7 +9,7 @@ AWS S3 (Static Website Hosting), AWS API Gateway (REST API), AWS Lambda (Serverl
 Frontend → API Gateway → Lambda → DynamoDB
 
 ## 📁 Project Structure
-frontend/ (index.html, style.css, script.js)  
+frontend/ (index.html)  
 lambda/ (index.js)
 
 ## 🚀 Features
