@@ -30,29 +30,29 @@ lambda/ (index.js)
 POST https://your-api-id.execute-api.region.amazonaws.com/contact  
 
 ## 📌 Lambda Function Code
-const AWS = require("aws-sdk");  
-const db = new AWS.DynamoDB.DocumentClient();  
-
-exports.handler = async (event) => {  
-    const body = JSON.parse(event.body);  
-
-    const params = {  
-        TableName: "ContactForm",  
-        Item: {  
-            email: body.email,  
-            name: body.name,  
-            message: body.message,  
-            timestamp: new Date().toISOString()  
-        }  
+    const AWS = require("aws-sdk");  
+    const db = new AWS.DynamoDB.DocumentClient();  
+    
+    exports.handler = async (event) => {  
+        const body = JSON.parse(event.body);  
+    
+        const params = {  
+            TableName: "ContactForm",  
+            Item: {  
+                email: body.email,  
+                name: body.name,  
+                message: body.message,  
+                timestamp: new Date().toISOString()  
+            }  
+        };  
+    
+        await db.put(params).promise();  
+    
+        return {  
+            statusCode: 200,  
+            body: JSON.stringify({ message: "Data saved successfully!" })  
+        };  
     };  
-
-    await db.put(params).promise();  
-
-    return {  
-        statusCode: 200,  
-        body: JSON.stringify({ message: "Data saved successfully!" })  
-    };  
-};  
 
 ## 🧪 AWS Services Used
 - Amazon S3 → Hosting static website  
