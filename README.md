@@ -59,6 +59,7 @@ S3 hosts the static website, API Gateway handles HTTP requests, Lambda processes
 
 ## 🌐 API Endpoint Example
 Base URL: https://5t0wyd87ch.execute-api.us-east-1.amazonaws.com
+
 Route: /contact
 ---
 
